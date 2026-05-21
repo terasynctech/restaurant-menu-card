@@ -3,156 +3,404 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <title>Food Zone Restaurant</title>
+<title>Food Zone Restaurant</title>
 
-  <link rel="stylesheet"
-        href="style.css">
+<!-- SEO -->
+
+<meta name="description"
+content="Food Zone Restaurant - Delicious Food & Beverages with WhatsApp Ordering">
+
+<meta name="keywords"
+content="Restaurant, Food, Pizza, Burger, Pasta, Ranchi Restaurant">
+
+<meta name="author"
+content="Terasync Tech">
+
+<!-- Open Graph -->
+
+<meta property="og:title"
+content="Food Zone Restaurant">
+
+<meta property="og:description"
+content="Delicious Food & Beverages | Order on WhatsApp">
+
+<meta property="og:image"
+content="https://terasynctech.github.io/restaurant-menu-card/logo.png">
+
+<meta property="og:url"
+content="https://terasynctech.github.io/restaurant-menu-card/">
+
+<meta property="og:type"
+content="website">
+
+<!-- Twitter -->
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="Food Zone Restaurant">
+
+<meta name="twitter:description"
+content="Fresh • Tasty • Hygienic Food">
+
+<meta name="twitter:image"
+content="https://terasynctech.github.io/restaurant-menu-card/logo.png">
+
+<!-- Website Logo -->
+
+<link rel="icon"
+type="image/png"
+href="logo.png">
+
+<!-- CSS -->
+
+<link rel="stylesheet"
+href="style.css">
 
 </head>
 
 <body>
 
-  <!-- Header -->
+<!-- HEADER -->
 
-  <header>
+<header>
 
-    <h1>Food Zone</h1>
+<div class="logo-box">
 
-    <nav>
+<img src="logo.png"
+alt="Food Zone Logo">
 
-      <a href="#">Home</a>
+<h1>Food Zone</h1>
 
-      <a href="#menu">Menu</a>
+</div>
 
-      <a href="#about">About</a>
+<nav>
 
-      <a href="#contact">Contact</a>
+<a href="#">Home</a>
 
-    </nav>
+<a href="#menu">Menu</a>
 
-  </header>
+<a href="#about">About</a>
 
-  <!-- Hero -->
+<a href="#contact">Contact</a>
 
-  <section class="hero">
+</nav>
 
-    <h2>Delicious Food & Beverages</h2>
+</header>
 
-    <p>Fresh • Tasty • Hygienic</p>
+<!-- OFFER -->
 
-    <a href="https://wa.me/919108417969"
-       target="_blank"
-       class="btn">
+<div class="offer">
 
-       Order Now
+🔥 Flat 20% OFF On Orders Above ₹499
 
-    </a>
+</div>
 
-  </section>
+<!-- HERO -->
 
-  <!-- Menu -->
+<section class="hero">
 
-  <section class="menu"
-           id="menu">
+<h2>Delicious Food & Beverages</h2>
 
-    <h2>Our Menu</h2>
+<p>Fresh • Tasty • Hygienic</p>
 
-    <div class="menu-container">
+<a href="https://wa.me/919108417969"
+target="_blank"
+class="btn">
 
-      <div class="item">
+Order Now
 
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
-             alt="Pizza">
+</a>
 
-        <h3>Pizza</h3>
+</section>
 
-        <p>₹299</p>
+<!-- MENU -->
 
-      </div>
+<section class="menu"
+id="menu">
 
-      <div class="item">
+<h2>Our Menu</h2>
 
-        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
-             alt="Burger">
+<div class="menu-container">
 
-        <h3>Burger</h3>
+<!-- ITEM 1 -->
 
-        <p>₹149</p>
+<div class="item">
 
-      </div>
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop"
+alt="Pizza">
 
-      <div class="item">
+<h3>Cheese Pizza</h3>
 
-        <img src="https://images.unsplash.com/photo-1604908176997-4318dd5d8c0d"
-             alt="Pasta">
+<p>₹299</p>
 
-        <h3>Pasta</h3>
+<button onclick="addToCart('Cheese Pizza',299)">
+Add To Cart
+</button>
 
-        <p>₹199</p>
+</div>
 
-      </div>
+<!-- ITEM 2 -->
 
-    </div>
+<div class="item">
 
-  </section>
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop"
+alt="Burger">
 
-  <!-- About -->
+<h3>Classic Burger</h3>
 
-  <section class="about"
-           id="about">
+<p>₹149</p>
 
-    <h2>About Us</h2>
+<button onclick="addToCart('Classic Burger',149)">
+Add To Cart
+</button>
 
-    <p>
+</div>
 
-      Food Zone Restaurant provides
-      delicious food with quality service.
+<!-- ITEM 3 -->
 
-    </p>
+<div class="item">
 
-  </section>
+<img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=1200&auto=format&fit=crop"
+alt="Pasta">
 
-  <!-- Contact -->
+<h3>White Sauce Pasta</h3>
 
-  <section class="contact"
-           id="contact">
+<p>₹199</p>
 
-    <h2>Contact Us</h2>
+<button onclick="addToCart('White Sauce Pasta',199)">
+Add To Cart
+</button>
 
-    <p>📍 Ranchi, Jharkhand</p>
+</div>
 
-    <p>📞 +91 91084 17969</p>
+</div>
 
-    <p>📧 foodzone@gmail.com</p>
+</section>
 
-    <a href="https://wa.me/919108417969"
-       target="_blank"
-       class="btn">
+<!-- DIGITAL BILL -->
 
-       WhatsApp Order
+<section class="bill-section">
 
-    </a>
+<h2>Your Digital Bill</h2>
 
-  </section>
+<div id="bill"></div>
 
-  <!-- Footer -->
+<h3 id="total">Total: ₹0</h3>
 
-  <footer>
+<button class="whatsapp-btn"
+onclick="sendOrder()">
 
-    <p>
+Send Order On WhatsApp
 
-      © 2026 Food Zone Restaurant |
-      Designed by Terasync Tech
+</button>
 
-    </p>
+</section>
 
-  </footer>
+<!-- ABOUT -->
+
+<section class="about"
+id="about">
+
+<h2>About Us</h2>
+
+<p>
+
+Food Zone Restaurant provides
+delicious food with quality service
+and digital ordering experience.
+
+</p>
+
+</section>
+
+<!-- GOOGLE MAP -->
+
+<section class="map-section">
+
+<h2>Our Location</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Ranchi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<!-- INSTAGRAM -->
+
+<section class="instagram-section">
+
+<h2>Follow Us</h2>
+
+<a href="https://instagram.com"
+target="_blank"
+class="insta-btn">
+
+Instagram
+
+</a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact"
+id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Ranchi, Jharkhand</p>
+
+<p>📞 +91 91084 17969</p>
+
+<p>📧 foodzone@gmail.com</p>
+
+<a href="https://wa.me/919108417969"
+target="_blank"
+class="btn">
+
+WhatsApp Order
+
+</a>
+
+</section>
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/919108417969"
+target="_blank"
+class="whatsapp-float">
+
+💬
+
+</a>
+
+<!-- FLOATING CART -->
+
+<div class="cart-floating"
+onclick="sendOrder()">
+
+🛒 Cart
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 Food Zone Restaurant |
+Designed by Terasync Tech
+
+</p>
+
+</footer>
+
+<!-- SCRIPT -->
+
+<script>
+
+let cart = [];
+
+function addToCart(item, price){
+
+const existing =
+cart.find(p => p.item === item);
+
+if(existing){
+
+existing.qty++;
+
+}else{
+
+cart.push({
+item,
+price,
+qty:1
+});
+
+}
+
+updateBill();
+
+}
+
+function updateBill(){
+
+const bill =
+document.getElementById("bill");
+
+bill.innerHTML = "";
+
+let total = 0;
+
+cart.forEach(product => {
+
+const line =
+document.createElement("p");
+
+line.innerHTML =
+`${product.item} x ${product.qty} = ₹${product.price * product.qty}`;
+
+bill.appendChild(line);
+
+total +=
+product.price * product.qty;
+
+});
+
+document.getElementById("total")
+.innerHTML =
+`Total: ₹${total}`;
+
+}
+
+function sendOrder(){
+
+if(cart.length === 0){
+
+alert("Cart is empty");
+
+return;
+
+}
+
+let message =
+"Hello Food Zone,%0A%0AI want to order:%0A";
+
+let total = 0;
+
+cart.forEach(product => {
+
+const lineTotal =
+product.price * product.qty;
+
+message +=
+`${product.item} x ${product.qty} = ₹${lineTotal}%0A`;
+
+total += lineTotal;
+
+});
+
+message +=
+`%0ATotal Bill: ₹${total}`;
+
+window.open(
+`https://wa.me/919108417969?text=${message}`,
+"_blank"
+);
+
+}
+
+</script>
 
 </body>
-
 </html>
